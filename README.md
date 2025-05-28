@@ -55,4 +55,4 @@ $ docker compose up -d
 
 http://localhost:3000
 
-以上で環境構築は完了です！変更をcommitして、リモートリポジトリにpushしましょう！
+以上で環境構築は完了です！変更は全てcommitして、リモートリポジトリにpushしておきましょう👍
