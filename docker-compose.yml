@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: bash -c "./bin/dev"
+    command: "./bin/rails server -b 0.0.0.0"
     volumes:
       - .:/rails
     ports:
