@@ -1,5 +1,5 @@
 # RUBY_VERSIONが.ruby-versionとGemfileのバージョンと一致していることを確認
-ARG RUBY_VERSION=3.3.8
+ARG RUBY_VERSION=3.4.4
 FROM ruby:$RUBY_VERSION
 
 # Railsアプリケーションはここに配置
