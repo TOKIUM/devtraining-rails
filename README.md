@@ -34,7 +34,7 @@ $ cd ${レポジトリ名}
 以下のコマンドを実行して、Dockerコンテナ内でRailsプロジェクトを新規作成します。
 
 ```bash
-$ docker compose run web rails new . --skip-docker -force
+$ docker compose run web rails new . --name=${アプリ名} --skip-docker -force
 ```
 
 ### 4. Dockerコンテナをビルドする
@@ -46,7 +46,7 @@ $ docker compose build
 ### 5. Dockerコンテナを起動し、Railsサーバーを立ち上げる
 
 ```bash
-$ docker compose up
+$ docker compose up -d
 ```
 
 ### 6. Railsの初期画面を確認する
@@ -55,4 +55,4 @@ $ docker compose up
 
 http://localhost:3000
 
-以上で環境構築は完了です！これからRuby on Railsを使ったバックエンド開発を始めましょう！
+以上で環境構築は完了です！変更をcommitして、リモートリポジトリにpushしましょう！
