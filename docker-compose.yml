@@ -4,6 +4,8 @@ services:
       context: .
       dockerfile: Dockerfile
     command: bash -c "./bin/dev"
+    volumes:
+      - .:/rails
     ports:
       - "3000:3000"
     environment:
