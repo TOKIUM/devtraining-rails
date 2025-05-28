@@ -24,8 +24,9 @@
 作成したリポジトリをローカル環境にクローンします。
 
 ```bash
-$ git clone git@github.com:あなたのユーザー名/リポジトリ名.git
-$ cd リポジトリ名
+$ cd ~
+$ git clone git@github.com:${ユーザー名}/${レポジトリ名}.git
+$ cd ${レポジトリ名}
 ```
 
 ### 3. Dockerコンテナ内でRailsプロジェクトを作成する
@@ -33,7 +34,7 @@ $ cd リポジトリ名
 以下のコマンドを実行して、Dockerコンテナ内でRailsプロジェクトを新規作成します。
 
 ```bash
-$ docker compose run web rails new devtraining-rails --skip-docker -force
+$ docker compose run web rails new . --skip-docker -force
 ```
 
 ### 4. Dockerコンテナをビルドする
